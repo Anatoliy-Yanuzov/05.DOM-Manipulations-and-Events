@@ -16,4 +16,5 @@ function create(words) {
       let divParentElement = document.querySelector('#content');
       divParentElement.appendChild(divElement);
    }
+   
 }
