@@ -11,7 +11,7 @@ function attachEventsListeners() {
         hoursElement.value = Number(daysElement.value) * 24;
         minutesElement.value = Number(hoursElement.value) * 60;
         secondsElement.value = Number(minutesElement.value) * 60;
-    })
+    });
 
     let buttonHours = document.querySelector('#hoursBtn');
 
@@ -19,7 +19,7 @@ function attachEventsListeners() {
         daysElement.value = (Number(hoursElement.value) / 24).toFixed(1);
         minutesElement.value = Number(hoursElement.value) * 60;
         secondsElement.value = Number(minutesElement.value) * 60;
-    })
+    });
 
     let buttonMinutes = document.querySelector('#minutesBtn');
 
@@ -27,7 +27,7 @@ function attachEventsListeners() {
         secondsElement.value = Number(minutesElement.value) * 60;
         hoursElement.value = Number(minutesElement.value) / 60;
         daysElement.value = (Number(hoursElement.value) / 24).toFixed(1);
-    })
+    });
 
     let buttonSeconds = document.querySelector('#secondsBtn');
 
@@ -35,5 +35,5 @@ function attachEventsListeners() {
         minutesElement.value = Number(secondsElement.value) / 60;
         hoursElement.value = Number(minutesElement.value) / 60;
         daysElement.value = (Number(hoursElement.value) / 24).toFixed(1);
-    })
+    });
 }
